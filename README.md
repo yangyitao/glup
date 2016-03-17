@@ -41,6 +41,7 @@ gulp.task('minifycss', function() {
 压缩js
 ```
 gulp.task('minifyjs', function() {
+    //gulp.src([])可以用数组的形式加载不同格式，不同位置的文件
     return gulp.src('src/*.js')
         .pipe(concat('main.js'))    //合并所有js到main.js
         .pipe(gulp.dest('minified/js'))    //输出main.js到文件夹
